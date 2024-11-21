@@ -1,0 +1,120 @@
+* {
+    justify-content: space-around;
+    background-color: rgb(41, 41, 41);
+
+}
+
+/* Стили для body */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;    
+
+}
+
+/* Стили для youtube_video */
+.youtube_video {
+    text-align: end;    
+
+}
+
+/* Стили для videoYouTube */
+.videoYouTube {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    transition:  0.5s,
+}
+
+.videoYouTube:hover {
+    background-color: black;
+    color: white;
+}
+
+/* Стили для carousel */
+.carousel {
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 15px;
+
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;    
+
+}
+
+/* Стили для заголовков h1 и h3 */
+h1, h3 {
+    text-align: center;
+    color: white;
+}
+
+/* Стили для setchik */
+.setchik {
+
+    height: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.counter {
+    display: inline-block;
+    animation: count 1s steps(14) forwards;
+    font-size: 5rem;
+    color: rgb(61, 61, 61);
+}
+
+@keyframes count {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-70rem); /* Adjust based on the total height of all elements */
+    }
+}
+
+.setchik_span {
+    display: block;
+    height: 5rem; /* Match the height of the container */
+    line-height: 5rem; /* Center the text vertically */
+}
+
+.reviews {
+    opacity: 0;
+    font-size: 2rem;
+    color: white;
+    transition: opacity 2s ease-in-out;
+}
+
+.counter .last {
+    animation: showReviews 1s forwards;
+}
+
+@keyframes showReviews {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cardd{
+    width: 280px;
+    height: 320px;
+    border: 15px solid black;
+}
+.inenavijuevantomarked{
+    width: 175px;
+}
